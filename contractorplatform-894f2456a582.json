@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "contractorplatform",
+  "private_key_id": "894f2456a58282fb3e3db04a12e2b460fdfbac30",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDkHduHUOb/XOUB\nZ5VA2oEN7YbRDom3PCpYE/NwpdjIx1/u31dl/sZIAD9gYm1xu3jyDwR2i2M5+Yb5\n9Sadc4rfMRBu2kcRNBKFT1NmlRo4dXZ01PA8/r0YycVkHewESqpocr4J5bzLIVz+\n6adQoUZb+SMYsPCMggDLwGcZ0++StjTl0iYJF0mBlN4SnN7BQ/CWeXQcUex4auJo\nXvdWbss05sCSwTv9KgJ+M27w4nDLTOor37oPL/ytS0fxhWTWDl7+KieREwm5KO5F\neL78P5zPt2ATbF1+Ab2xiLX2GuG4K1QTndUZiAVwxIeSNXU+61oDBvN4rUHeg0IT\nT1xczo3fAgMBAAECggEARnc0q6Ghoat78EmjkNOOfxNrDGQtxWT3/Zo4HomUpDz2\nVO8368FeVbqB2U++WB4dt8RM0COxpKSAffEtGwEomlZpKZ0Sy+0mdXiyHiOb5Gng\njCmFBop4NlKJv6oAkLjR2A7txlfp0GO/et0Jer4+4kVdApER1Y2JGmeWUaOmw04h\nT5f4c0BkR19XKXQ9gAArTrwn2Qbs8L2myomkJCuGlOJXdE+f6rxTQlT2bt3QHH84\nhPQGJlttpPAN2c/HW0yGM8fQLPgtvo/RwxZergDkDzBz7Xn9npyJ1hnbeJ+WFhPu\nRrR2ELf9C104GEm4WQ3rWp6T1rOtuFuPVGutU039mQKBgQDxyihPsvqFmrTIAUol\n+87Xnw+vPUh1kM5NXbb0AmOcr2Ktr9Up4HoEvZAHrf0BEypHjYBJD4K8gPzHYYzY\nax2q3A/z+P3duMpYiRuiMaER2bnuU1yidSkKyJetyo29I1+PXlP+lVLjJMAVtXT1\nBtqUPaXTnhDYprGtFIPBFtfdZwKBgQDxhfuDbiWfes/+lnYpPiy3tjn+Xhtz9msT\nM9ZBR9Hc/C5w7A0XYw/7izvievgdLCV68QQvO0Eu2B+nVB5X8DSVjYGFe2+11vYV\n4RWWLsUixJ2pAvaIjYOIXncsax58kOAscWyAfmcS3XYnHxxwBekSzM83RQwTyQJ9\n+X2Rj9WIyQKBgQDw6G11y2xVRimtxastYVFcAT3NapARo3AKIb+yK9c4PH9jcvg+\nu0yYAI/LNw4IziGoHVKeePfX/eTee1GsKD3tCUpT2diH3CCwShvgZPaJJJhe32xC\n6d00w1xtao4Cz4XdAS1LUVi+vNUuTBf2MxgB79KToMBEPQJ24yPLdYkrLQKBgB4f\npeUYodyoRrTsM0SlmpI3SjhtqGLoQyab+ocd3BEB6xDugBuAoYewMAHpcHTDAtG4\nqdryOwkKr7gBB9/T99sHUTZC1QYLD5pe/oBCyRezCi8ATZtuew9RKPADVEQZFby1\nUOEd4uE5efkbKkLWmeFcZiPwmrcFBSiNK5oyJGHxAoGAXmsY5eTq9TQg54yKzPHZ\nwyQ+Gxdo5ND7SPx7EEA3J44tdHeSP+JAKO3dCjk3XN9LtwJSKYFEZ7vPQQuuHPe3\n1jwn4/iJ7VUxdXjGbXSUCAfeLHV4/38YFLpRo6ptUaaCxN/b/TsoktOugMselham\nyNPRWV/7J3OVXzyGfxbvWU0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "contractor-bot@contractorplatform.iam.gserviceaccount.com",
+  "client_id": "117540980080482976036",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/contractor-bot%40contractorplatform.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
