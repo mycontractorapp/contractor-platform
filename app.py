@@ -1,27 +1,24 @@
-from flask import Flask, render_template, request
+from flask import Flask, request, render_template
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
 import os
 import json
+from oauth2client.service_account import ServiceAccountCredentials
 
 app = Flask(__name__)
 
-# ใช้ Scope สำหรับ Google Sheets และ Drive API
-scope = [
-    "https://spreadsheets.google.com/feeds",
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-]
+# อ่านค่า JSON จาก Environment Variable
+SERVICE_ACCOUNT_JSON = os.getenv("SERVICE_ACCOUNT_JSON")
 
-# โหลด credentials จาก Environment Variable
-google_creds_json = os.environ.get('GOOGLE_SHEET_CREDENTIALS')
-creds_dict = json.loads(google_creds_json)
-creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
+# แปลง JSON String เป็น dict
+service_account_info = json.loads(SERVICE_ACCOUNT_JSON)
 
-# สร้าง client และเปิด spreadsheet
+# ตั้งค่า scope และ credentials
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+creds = ServiceAccountCredentials.from_json_keyfile_dict(service_account_info, scope)
 client = gspread.authorize(creds)
-sheet = client.open("ContractorPlatform").sheet1  # ชื่อ Google Sheet ของคุณ
+
+# เปิด Google Sheet ตามชื่อ
+sheet = client.open("ContractorPlatform").sheet1
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -29,9 +26,12 @@ def index():
         name = request.form['name']
         phone = request.form['phone']
         province = request.form['province']
-        job_type = request.form['job_type']
-        sheet.append_row([name, phone, province, job_type])
-        return "ส่งข้อมูลเรียบร้อยแล้ว ✅"
+        work_type = request.form['work_type']
+        
+        # เพิ่มข้อมูลลงในแถวใหม่
+        sheet.append_row([name, phone, province, work_type])
+        return 'ส่งข้อมูลเรียบร้อยแล้ว! ✅'
+    
     return render_template('form.html')
 
 if __name__ == '__main__':
